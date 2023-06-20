@@ -1,5 +1,7 @@
 package org.example;
 
+import java.util.Objects;
+
 public class Cliente {
     private String nome;
     private String senha;

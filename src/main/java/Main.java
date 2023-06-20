@@ -14,7 +14,6 @@ public class Main {
         Cliente cliente = new Cliente(nome,senha);
         clienteController.cadastrarCliente(cliente);
 
-        clienteController.mostrarSenha();
 
     }
 }
