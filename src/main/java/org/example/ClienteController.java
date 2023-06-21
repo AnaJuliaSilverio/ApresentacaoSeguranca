@@ -9,4 +9,9 @@ public class ClienteController {
         System.out.println("Senha Com Hash: "+clienteRepository.mostraSenha());
     }
 
+    public void login(String senha){
+        if (clienteRepository.login(senha)) System.out.println("Bem vindo");
+        else System.out.println("Senha incorreta");
+    }
+
 }

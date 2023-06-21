@@ -1,6 +1,5 @@
 import org.example.Cliente;
 import org.example.ClienteController;
-
 import java.util.Scanner;
 
 public class Main {
@@ -14,6 +13,9 @@ public class Main {
         Cliente cliente = new Cliente(nome,senha);
         clienteController.cadastrarCliente(cliente);
 
-
+        System.out.println("LOGIN");
+        System.out.println("Digite sua senha:");
+        String senha1 = sc.next();
+        clienteController.login(senha1);
     }
 }
